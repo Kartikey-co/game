@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="container ">
+    <h1>Rock Paper Scissors</h1>
+    <h2> Timer: <span id="timer">30s</span></h2>
+    <div class="choices ">
+      <button id="rock" class="choice ">Rock</button>
+      <button id="paper" class="choice">Paper</button>
+      <button id="scissors" class="choice">Scissors</button>
+    </div>
+
+    <div class="result">
+      <div id="for_player">
+        <img class="player-icon" src="rock-neon-icons.png" alt="rock">
+        <h2>You</h2>
+        <p>Your Score: <span id="your-score">0</span></p>
+        <audio id="win" src="win.mp3"></audio>
+        <audio id="draw" src="draw.mp3"></audio>
+      </div>
+      <div class="finalresult ">
+        <audio id="game-over" src="game-over.mp3"></audio>
+        <h2 id="winner"></h2>
+        <p id="feedback"></p>
+        <div id="summary"></div>
+        <button id="btn">OK</button>
+      </div>
+      <div id="for_computer">
+        <img class="computer-icon" src="rock-neon-icons.png" alt="rock">
+        <h2>Computer</h2>
+        <p>Computer Score: <span id="computer-score">0</span></p>
+        <audio id="loose" src="loose.mp3"></audio>
+      </div>
+
+    </div>
+  
+      
+      <button id="restart" class="restart"><i class="fa-solid fa-play iconClass" style="color: #2e62bd;"></i>
+        <span class="button-text">Play</span> </button>
+   
+    <audio id="start" src="game-start.mp3"></audio>
+    <button id="set-timer" class="set-timer">Set Timer</button>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
